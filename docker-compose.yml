@@ -1,0 +1,10 @@
+version: '2.4'
+
+services:
+  rundeck:
+    image: rundeck/rundeck:3.3.9
+    expose:
+      - "4440"
+    env_file: .env
+    network_mode: bridge
+    init: true
